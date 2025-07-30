@@ -7,10 +7,10 @@ hidePagination: true
 
 ## Projects
 ### **kindle2org**
-Pyhton script that takes the notes, highlights and bookmarks from an
+Python script that takes the notes, highlights and bookmarks from an
 Amazon Kindle and organizes in an Org file. Check the [Github
 repository](https://github.com/AbrahamVillaFigueroa/kindle2org) for
-mor info.
+more info.
 
 ### **The Journey of Pzazz**
 #### Summary
@@ -45,7 +45,7 @@ its codebase.
 
 #### Art
 Most of the art was bought from third-party pixel artists in itch.io,
-and from opengameart.org. 
+or taken from free assets in opengameart.org. 
 
 #### Screenshots
 ![img](imgs/pzazz1.png#small)
@@ -59,7 +59,7 @@ These are available upon request.
 [Project website](https://elcineprobablemente.com/index.html) created in plain HTML, CSS and JavaScript for the
 magazine I created and edited. It is hosted in GitHub Pages. 
 #### Commissioned personal website
-Personal website that aims to adopte a vintage/indie web aesthetic to
+Personal website that aims to adopt a vintage/indie web aesthetic to
 generate a distinctive impression.
 It is not currently online anymore, but here are some screenshots of it. 
 ![img](imgs/retro-web1.png#small)
@@ -69,3 +69,7 @@ It is not currently online anymore, but here are some screenshots of it.
 [CS50 - Introduction to Computer Science](docs/CS50x.pdf)
 
 [CS50 - Introduction to Programming with Python](docs/CS50P.pdf)
+
+<!-- Local Variables: -->
+<!-- jinx-languages: "en_US" -->
+<!-- End: -->
