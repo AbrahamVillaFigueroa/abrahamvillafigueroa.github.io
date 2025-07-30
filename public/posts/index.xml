@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Abraham Villa Figueroa</title>
-    <link>https://abrahamvillafigueroa.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Abraham Villa Figueroa</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://abrahamvillafigueroa.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Por qué no me atribula descargar libros de internet sin pagar</title>
-      <link>https://abrahamvillafigueroa.github.io/posts/descargar-libros-de-internet-sin-pagar/</link>
+      <link>http://localhost:1313/posts/descargar-libros-de-internet-sin-pagar/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://abrahamvillafigueroa.github.io/posts/descargar-libros-de-internet-sin-pagar/</guid>
+      <guid>http://localhost:1313/posts/descargar-libros-de-internet-sin-pagar/</guid>
       <description>Ojalá fuera sólo cuestión de cometer un crimen, pero es peor</description>
     </item>
     <item>
       <title>Las mejores películas de 2024</title>
-      <link>https://abrahamvillafigueroa.github.io/posts/mejores-peliculas-2024/</link>
+      <link>http://localhost:1313/posts/mejores-peliculas-2024/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://abrahamvillafigueroa.github.io/posts/mejores-peliculas-2024/</guid>
+      <guid>http://localhost:1313/posts/mejores-peliculas-2024/</guid>
       <description>Otro año de darle al gusto lo que necesita más que lo que quiere</description>
     </item>
     <item>
       <title>La suciedad y el artista</title>
-      <link>https://abrahamvillafigueroa.github.io/posts/the-brutalist/</link>
+      <link>http://localhost:1313/posts/the-brutalist/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://abrahamvillafigueroa.github.io/posts/the-brutalist/</guid>
+      <guid>http://localhost:1313/posts/the-brutalist/</guid>
       <description>Sobre «The Brutalist», de Brady Corbet</description>
     </item>
     <item>
       <title>El tacto y la política</title>
-      <link>https://abrahamvillafigueroa.github.io/posts/all-we-imagine-as-light/</link>
+      <link>http://localhost:1313/posts/all-we-imagine-as-light/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://abrahamvillafigueroa.github.io/posts/all-we-imagine-as-light/</guid>
+      <guid>http://localhost:1313/posts/all-we-imagine-as-light/</guid>
       <description>Sobre «All We Imagine as Light», de Payal Kapadia</description>
     </item>
     <item>
       <title>Escribir en la pantalla</title>
-      <link>https://abrahamvillafigueroa.github.io/posts/escribir-en-pantalla/</link>
+      <link>http://localhost:1313/posts/escribir-en-pantalla/</link>
       <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://abrahamvillafigueroa.github.io/posts/escribir-en-pantalla/</guid>
+      <guid>http://localhost:1313/posts/escribir-en-pantalla/</guid>
       <description>La herramientas textuales</description>
     </item>
     <item>
       <title>Ocio de octubre</title>
-      <link>https://abrahamvillafigueroa.github.io/posts/octubre/</link>
+      <link>http://localhost:1313/posts/octubre/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://abrahamvillafigueroa.github.io/posts/octubre/</guid>
+      <guid>http://localhost:1313/posts/octubre/</guid>
       <description>Un mes flotante</description>
     </item>
   </channel>
