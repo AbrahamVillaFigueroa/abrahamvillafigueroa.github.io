@@ -51,7 +51,7 @@ or taken from free assets in opengameart.org.
 ![img](imgs/pzazz1.png#small)
 ![img](imgs/pzazz2.png#small)
 ![img](imgs/pzazz3.png#small)
-### Demo and source code
+#### Demo and source code
 These are available upon request. 
 
 ### **Websites**
