@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Abraham Villa Figueroa</title>
+    <link>https://example.org/tags/java/</link>
+    <description>Recent content in java on Abraham Villa Figueroa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Log-Structured Merge Tree</title>
+      <link>https://example.org/posts/my-first-post/</link>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/my-first-post/</guid>
+      <description>An LSM Tree overview and Java implementation.</description>
+    </item>
+  </channel>
+</rss>

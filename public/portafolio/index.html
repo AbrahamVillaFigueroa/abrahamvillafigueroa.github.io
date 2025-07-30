@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es"
+  dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+<link rel="icon" type="image/ico" href="https://abrahamvillafigueroa.github.io//favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://abrahamvillafigueroa.github.io//favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://abrahamvillafigueroa.github.io//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://abrahamvillafigueroa.github.io//android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://abrahamvillafigueroa.github.io//apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+<title>
+    
+    Portafolio | Abraham Villa Figueroa
+    
+</title>
+
+<link rel="canonical" href="https://abrahamvillafigueroa.github.io/portafolio/"/>
+
+<meta property="og:url" content="https://abrahamvillafigueroa.github.io/portafolio/">
+  <meta property="og:site_name" content="Abraham Villa Figueroa">
+  <meta property="og:title" content="Portafolio">
+  <meta property="og:description" content="Projects kindle2org Pyhton script that takes the notes, highlights and bookmarks from an Amazon Kindle and organizes in an Org file. Check the Github repository for mor info.
+The Journey of Pzazz Summary Japanese style Role-Playing Game that aims to merge the classic style of the 90’s SNES-era videogames with a turn-based battle system reminiscent of contemporary roguelikes. Instead of using a progression system based on gathering experience points and leveling up, common in most RPGs, The Journey of Pzazz implements a progression system based on achievements, which gives the player more freedom to pursue the tasks he prefers, and contributes to create a more manageable and strategic stats system.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.8860990d2cc396ce7fcc7f549305d9c8177896f15f26716d635831e26fc618a9.css" media="all">
+
+
+
+
+
+
+
+
+
+  </head>
+
+  
+
+  
+  
+  
+
+  <body class="dark">
+
+    <div class="content">
+      <header>
+        
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://abrahamvillafigueroa.github.io/">Abraham Villa Figueroa</a>
+    </h1>
+
+    <div class="flex">
+        
+
+        
+        
+      
+        <p class="small ">
+            <a href="/" >
+                /inicio
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/textos" >
+                /textos
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/posts" >
+                /weblog
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/etc" >
+                /etc
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+      </header>
+
+      <main class="main">
+        
+
+
+
+
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Portafolio</h1>
+    
+
+    
+
+    <p class="single-readtime">
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+  <aside class="toc">
+    <p><strong>Table of contents</strong></p>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#projects">Projects</a>
+      <ul>
+        <li><a href="#kindle2org"><strong>kindle2org</strong></a></li>
+        <li><a href="#the-journey-of-pzazz"><strong>The Journey of Pzazz</strong></a></li>
+        <li><a href="#demo-and-source-code">Demo and source code</a></li>
+        <li><a href="#websites"><strong>Websites</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#certificates">Certificates</a></li>
+  </ul>
+</nav>
+  </aside>
+  
+
+  
+
+  <div class="single-content">
+    <h2 id="projects">Projects</h2>
+<h3 id="kindle2org"><strong>kindle2org</strong></h3>
+<p>Pyhton script that takes the notes, highlights and bookmarks from an
+Amazon Kindle and organizes in an Org file. Check the <a href="https://github.com/AbrahamVillaFigueroa/kindle2org">Github
+repository</a> for
+mor info.</p>
+<h3 id="the-journey-of-pzazz"><strong>The Journey of Pzazz</strong></h3>
+<h4 id="summary">Summary</h4>
+<p>Japanese style Role-Playing Game that aims to merge the classic style
+of the 90&rsquo;s SNES-era videogames with a turn-based battle system
+reminiscent of contemporary roguelikes. Instead of using a progression
+system based on gathering experience points and leveling up, common in
+most RPGs, <em>The Journey of Pzazz</em> implements a progression system
+based on achievements, which gives the player more freedom to pursue
+the tasks he prefers, and contributes to create a more manageable and
+strategic stats system.</p>
+<p>This is currently work in progress, so not all features have been
+properly implemented, and only a short demo is available upon request.</p>
+<h4 id="game-engine">Game Engine</h4>
+<p>The game is being developed using the LÖVE framework and the Tiled
+Level Editor. This allows for fast iteration and prototyping, and for
+a simpler, code-only development experience that suits me better as a
+sole developer.</p>
+<h4 id="code-architecture">Code architecture</h4>
+<p>The main structure of the game is a hierarchical state machine that
+stacks game states according to the game logic. This works very well
+for a JRPG because this type of game channels player input through
+several menus that pause the main play state.</p>
+<p>The high number of interwoven systems (inventory, stats, quests, story
+flags, interactive dialogues, party management) also required a heavy
+use of OOP, event managers, static machines, and command patterns in
+its codebase.</p>
+<h4 id="art">Art</h4>
+<p>Most of the art was bought from third-party pixel artists in itch.io,
+and from opengameart.org.</p>
+<h4 id="screenshots">Screenshots</h4>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class=" img-small">
+
+    <div>
+        <img loading="lazy" alt="img" src=" imgs/pzazz1.png#small">
+    </div>
+
+    
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class=" img-small">
+
+    <div>
+        <img loading="lazy" alt="img" src=" imgs/pzazz2.png#small">
+    </div>
+
+    
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class=" img-small">
+
+    <div>
+        <img loading="lazy" alt="img" src=" imgs/pzazz3.png#small">
+    </div>
+
+    
+</figure>
+</p>
+<h3 id="demo-and-source-code">Demo and source code</h3>
+<p>These are available upon request.</p>
+<h3 id="websites"><strong>Websites</strong></h3>
+<h4 id="el-cine-probablemente">El cine probablemente</h4>
+<p><a href="https://elcineprobablemente.com/index.html">Project website</a> created in plain HTML, CSS and JavaScript for the
+magazine I created and edited. It is hosted in GitHub Pages.</p>
+<h4 id="commissioned-personal-website">Commissioned personal website</h4>
+<p>Personal website that aims to adopte a vintage/indie web aesthetic to
+generate a distinctive impression.
+It is not currently online anymore, but here are some screenshots of it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class=" img-small">
+
+    <div>
+        <img loading="lazy" alt="img" src=" imgs/retro-web1.png#small">
+    </div>
+
+    
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class=" img-small">
+
+    <div>
+        <img loading="lazy" alt="img" src=" imgs/retro-web2.png#small">
+    </div>
+
+    
+</figure>
+</p>
+<h2 id="certificates">Certificates</h2>
+<p><a href="docs/CS50x.pdf">CS50 - Introduction to Computer Science</a></p>
+<p><a href="docs/CS50P.pdf">CS50 - Introduction to Programming with Python</a></p>
+
+    
+  </div>
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+      </main>
+    </div>
+
+    <footer>
+      
+
+
+
+    </footer>
+    
+  </body>
+
+  <script>
+
+  function isAuto() {
+    return document.body.classList.contains("auto");
+  }
+
+  function setTheme() {
+    if (!isAuto()) {
+      return
+    }
+
+    document.body.classList.remove("auto");
+    let cls = "light";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      cls = "dark";
+    }
+
+    document.body.classList.add(cls);
+  }
+
+  function invertBody() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+
+  if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+  }
+
+  setTheme();
+
+</script>
+
+</html>

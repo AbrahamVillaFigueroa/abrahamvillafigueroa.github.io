@@ -1,0 +1,33 @@
+/* Place custom css here */
+:root {
+    /* header settings */
+    --header-top-gap: 2rem;
+    --header-bottom-gap: 2.4rem;
+    --header-menu-side-gap: .5rem;
+    --header-menu-top-gap: 1rem;
+
+    /* Typography */
+    --font-body: "IBM Plex Sans", sans;
+    --font-mono: "IBM Plex Mono", monospace;
+    --font-headings: "IBM Plex Mono", monospace;
+
+
+    --h1-margin-top: 0rem;
+    --h1-margin-bottom: 0rem;
+    --h2-margin-top: 2.3rem;
+    --h2-margin-bottom: 0.3rem;
+    --hx-margin-top: 0rem;
+    --hx-margin-bottom: 0rem;
+    --p-margin-top: 1rem;
+    --p-margin-bottom: 1rem;
+    --code-margin-top: 2rem;
+    --code-margin-bottom: 2rem;
+
+    --h1-font-size: 1.6em;
+    --h2-font-size: 1.4em;
+    --hx-font-size: 1.2em;
+    --p-font-size: 1.1em;
+    --p-line-height: 1.3em;
+    --caption-font-size: .8em;
+
+}

@@ -1,0 +1,72 @@
+baseURL = 'https://abrahamvillafigueroa.github.io'
+languageCode = 'es'
+title = 'Abraham Villa Figueroa'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = "sitio web personal"
+
+# Header and breadcrumbs
+breadcrumbs = false
+hideHeader = false
+
+# Default language
+defaultLang = 'es'
+
+# Appareance
+theme = 'dark'
+colorPalette = 'custom-colors'
+
+# Intro on main page, content is markdown
+homeIntroContent = """
+Estudié filosofía en la UNAM y relaciones internacionales en El Colegio de México.
+
+Escribo crítica literaria y cinematográfica, y edito [*El Cine Probablemente*](https://elcineprobablemente.com/), una revista de cine impresa.
+
+A veces traduzco.
+
+He trabajado con varios festivales de cine.
+
+Aquí pueden encontrar una lista con mis textos publicados y algunas entradas de blog.
+"""
+
+# Date Format in List Pages
+listDateFormat = '2/1/2006'
+
+# Toggle summaries in list pages
+listSummaries = true
+
+# Maximum number of posts per page
+paginationSize = 100
+
+# Date Format in Single Pages
+singleDateFormat = '2/1/2006'
+
+# Footer
+showFooter = false
+
+# Email icon
+[[params.social]]
+name = "email"
+url = "https://letterbird.co/a-v-f"
+
+# Menu
+[[params.menu]]
+name = "inicio"
+url = "/"
+
+[[params.menu]]
+name = "textos"
+url = "/textos"
+
+[[params.menu]]
+name = "weblog"
+url = "/posts"
+
+[[params.menu]]
+name = "etc"
+url = "/etc"

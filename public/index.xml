@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Abraham Villa Figueroa</title>
+    <link>https://abrahamvillafigueroa.github.io/</link>
+    <description>Recent content in Home on Abraham Villa Figueroa</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abrahamvillafigueroa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Por qué no me atribula descargar libros de internet sin pagar</title>
+      <link>https://abrahamvillafigueroa.github.io/posts/descargar-libros-de-internet-sin-pagar/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/posts/descargar-libros-de-internet-sin-pagar/</guid>
+      <description>Ojalá fuera sólo cuestión de cometer un crimen, pero es peor</description>
+    </item>
+    <item>
+      <title>Las mejores películas de 2024</title>
+      <link>https://abrahamvillafigueroa.github.io/posts/mejores-peliculas-2024/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/posts/mejores-peliculas-2024/</guid>
+      <description>Otro año de darle al gusto lo que necesita más que lo que quiere</description>
+    </item>
+    <item>
+      <title>La suciedad y el artista</title>
+      <link>https://abrahamvillafigueroa.github.io/posts/the-brutalist/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/posts/the-brutalist/</guid>
+      <description>Sobre «The Brutalist», de Brady Corbet</description>
+    </item>
+    <item>
+      <title>El tacto y la política</title>
+      <link>https://abrahamvillafigueroa.github.io/posts/all-we-imagine-as-light/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/posts/all-we-imagine-as-light/</guid>
+      <description>Sobre «All We Imagine as Light», de Payal Kapadia</description>
+    </item>
+    <item>
+      <title>Escribir en la pantalla</title>
+      <link>https://abrahamvillafigueroa.github.io/posts/escribir-en-pantalla/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/posts/escribir-en-pantalla/</guid>
+      <description>La herramientas textuales</description>
+    </item>
+    <item>
+      <title>Ocio de octubre</title>
+      <link>https://abrahamvillafigueroa.github.io/posts/octubre/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/posts/octubre/</guid>
+      <description>Un mes flotante</description>
+    </item>
+    <item>
+      <title>Portafolio</title>
+      <link>https://abrahamvillafigueroa.github.io/portafolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/portafolio/</guid>
+      <description>&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;h3 id=&#34;kindle2org&#34;&gt;&lt;strong&gt;kindle2org&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Pyhton script that takes the notes, highlights and bookmarks from an&#xA;Amazon Kindle and organizes in an Org file. Check the &lt;a href=&#34;https://github.com/AbrahamVillaFigueroa/kindle2org&#34;&gt;Github&#xA;repository&lt;/a&gt; for&#xA;mor info.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-journey-of-pzazz&#34;&gt;&lt;strong&gt;The Journey of Pzazz&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;&#xA;&lt;p&gt;Japanese style Role-Playing Game that aims to merge the classic style&#xA;of the 90&amp;rsquo;s SNES-era videogames with a turn-based battle system&#xA;reminiscent of contemporary roguelikes. Instead of using a progression&#xA;system based on gathering experience points and leveling up, common in&#xA;most RPGs, &lt;em&gt;The Journey of Pzazz&lt;/em&gt; implements a progression system&#xA;based on achievements, which gives the player more freedom to pursue&#xA;the tasks he prefers, and contributes to create a more manageable and&#xA;strategic stats system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publicaciones</title>
+      <link>https://abrahamvillafigueroa.github.io/textos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/textos/</guid>
+      <description>&lt;h2 id=&#34;crítica-literaria&#34;&gt;Crítica literaria&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.nexos.com.mx/?p=80600&#34;&gt;Sobre &lt;em&gt;Le dedico mi silencio&lt;/em&gt;, de Mario Vargas Llosa&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://criticismo.com/la-estacion-del-pantano/&#34;&gt;Sobre &lt;em&gt;La estación del pantano&lt;/em&gt;, de Yuri Herrera&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://criticismo.com/vivir-abajo/&#34;&gt;Sobre &lt;em&gt;Vivir abajo&lt;/em&gt;, de Gustavo Faverón&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://criticismo.com/lealtad-al-fantasma/&#34;&gt;Sobre &lt;em&gt;Lealtad al fantasma&lt;/em&gt;, de Enrique Serna&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://criticismo.com/tres-novelas/&#34;&gt;Sobre tres novelas de Diamela Eltit&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;crítica-cinematográfica&#34;&gt;Crítica cinematográfica&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://sabzian.be/text/on-the-eve-of-the-future&#34;&gt;Entrevista a Eduardo Williams&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://www.swissinfo.ch/spa/cultura/locarno-reaviva-las-inocentes-alegr%C3%ADas-sangrientas-del-cine-mexicano/48728314&#34;&gt;Sobre la retrospectiva de cine mexicano proyectada en Locarno&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://www.revistadelauniversidad.mx/articles/d4c0096d-2430-4d83-9768-3e87fa7de6a3/tar-de-todd-field&#34;&gt;Sobre &lt;em&gt;Tár&lt;/em&gt;, de Todf Field&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://www.revistadelauniversidad.mx/articles/a6578777-6dc8-42b2-ab44-a7566e4983d6/crimenes-del-futuro-de-david-cronenberg&#34;&gt;Sobre &lt;em&gt;Crímenes del futuro&lt;/em&gt;, de David Cronenberg&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/blanco-en-blanco/&#34;&gt;Sobre &lt;em&gt;Blanco en blanco&lt;/em&gt;, de Théo Court&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/un-repaso-de-2019/&#34;&gt;Sobre lo mejor del 2019&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/parasitos/&#34;&gt;Sobre &lt;em&gt;Parasite&lt;/em&gt;, de Bong Joon-ho&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/la-lucidez-de-maya-deren-ideas-y-peliculas/&#34;&gt;Sobre la obra de Maya Deren&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/que-haras-cuando-el-mundo-este-en-llamas/&#34;&gt;Sobre &lt;em&gt;What You Gonna Do When the World’s on Fire?&lt;/em&gt;, de Roberto Minervini&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/leto-kirill-serebrennikov/&#34;&gt;Sobre &lt;em&gt;Leto&lt;/em&gt;, de Kirill Serébrennikov&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/seijun-suzuki-los-senderos-de-la-furia/&#34;&gt;Sobre el cine de Seijun Suzuki&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://revistaiconica.com/ana-y-bruno/&#34;&gt;Sobre &lt;em&gt;Ana y Bruno&lt;/em&gt;, de Carlos Carrera&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;http://correspondenciascine.com/2020/12/nomadland-de-chloe-zhao/&#34;&gt;Sobre &lt;em&gt;Nomadland&lt;/em&gt;, de Chloé Zao&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;http://correspondenciascine.com/2020/05/que-verde-era-mi-valle-la-encarnacion-de-la-nostalgia/&#34;&gt;Sobre &lt;em&gt;How Green Was My Valley!&lt;/em&gt;, de John Ford&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;http://correspondenciascine.com/2020/05/que-verde-era-mi-valle-la-encarnacion-de-la-nostalgia/&#34;&gt;Sobre &lt;em&gt;El automóvil gris&lt;/em&gt;, de Enrique Rosas&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;http://correspondenciascine.com/2020/02/quebecine-2020-un-dia-en-la-vida-de-noah-piugattuk-de-zacharias-kanuk/&#34;&gt;Sobre &lt;em&gt;One Day in the Life of Noah Piugattuk&lt;/em&gt;, de Zacharias Kunuk&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;http://correspondenciascine.com/2020/02/quebecine-2020-un-dia-en-la-vida-de-noah-piugattuk-de-zacharias-kanuk/&#34;&gt;Sobre &lt;em&gt;Suburban Birds&lt;/em&gt;, de Qiu Sheng&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;http://correspondenciascine.com/2019/09/la-mirada-cruel-luis-bunuel-y-el-azar/&#34;&gt;Sobre el cine de Luis Buñuel&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;http://correspondenciascine.com/2019/07/monrovia-indiana-de-frederick-wiseman/&#34;&gt;Sobre &lt;em&gt;Monrovia, Indiana&lt;/em&gt;, de Frederick Wiseman&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://pulsar.escine.mx/el-cine-invisible-defensa-de-la-voz-superpuesta/&#34;&gt;Sobre el recurso de la voz superpuersta&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://cultura.nexos.com.mx/la-tortuga-roja-los-relatos-del-silencio/&#34;&gt;Sobre &lt;em&gt;La Tortue Rouge&lt;/em&gt;, de Michaël Dudok de Wit&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;https://cultura.nexos.com.mx/huye/&#34;&gt;Sobre &lt;em&gt;Get Out&lt;/em&gt;, de Jordan Peele&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sitios de interés</title>
+      <link>https://abrahamvillafigueroa.github.io/etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://abrahamvillafigueroa.github.io/etc/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://elcineprobablemente.com/&#34;&gt;&lt;em&gt;El Cine Probablemente&lt;/em&gt;&lt;/a&gt; &lt;br&gt;&#xA;Revista de cine que edito con mis amigos. Estamos muy cerca de publicar el tercer número.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://letterboxd.com/aavilla/&#34;&gt;Mi cuenta de &lt;em&gt;Letterboxd&lt;/em&gt;&lt;/a&gt; &lt;br&gt;&#xA;Donde registro las películas que veo.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Go Hugo&lt;/a&gt; &lt;br&gt;&#xA;&lt;em&gt;Framework&lt;/em&gt; para la construcción de sitios web con el que genero esta página. Utilizo una versión modificada del tema &lt;a href=&#34;https://github.com/tomfran/typo?tab=readme-ov-file&#34;&gt;&lt;em&gt;Typo&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.ibm.com/plex/&#34;&gt;IBM Plex&lt;/a&gt; &lt;br&gt;&#xA;Tipografía del sitio.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

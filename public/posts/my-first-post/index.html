@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es"
+  dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+<link rel="icon" type="image/ico" href="https://example.org//favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://example.org//favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://example.org//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://example.org//android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://example.org//apple-touch-icon.png">
+
+<meta name="description" content="An LSM Tree overview and Java implementation."/>
+
+<title>
+    
+    Log-Structured Merge Tree | Abraham Villa Figueroa
+    
+</title>
+
+<link rel="canonical" href="https://example.org/posts/my-first-post/"/>
+
+<meta property="og:title" content="Log-Structured Merge Tree" />
+<meta property="og:description" content="An LSM Tree overview and Java implementation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/my-first-post/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-12T00:00:00+00:00" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.e227c48f6d1a3d0c388acfac6ec268d92dc778e77177ad7d0327744f80879192.css" media="all">
+
+
+
+
+
+
+
+
+
+  </head>
+
+  
+
+  
+  
+  
+
+  <body class="light">
+
+    <div class="content">
+      <header>
+        
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://example.org/">Abraham Villa Figueroa</a>
+    </h1>
+
+    <div class="flex">
+        
+
+        
+        
+      
+        <p class="small ">
+            <a href="/" >
+                /inicio
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/posts" >
+                /weblog
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/publicaciones" >
+                /publicaciones
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/contacto" >
+                /contacto
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+      </header>
+
+      <main class="main">
+        
+
+
+
+
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Log-Structured Merge Tree</h1>
+    
+    <p class="single-summary">An LSM Tree overview and Java implementation.</p>
+    
+
+    
+
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2023-11-12T00:00:00&#43;00:00">12/11/2023</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+  
+
+  <div class="single-tags">
+    
+    <span>
+      <a href="https://example.org/tags/database/">#database</a>
+    </span>
+    
+    
+    <span>
+      <a href="https://example.org/tags/java/">#java</a>
+    </span>
+    
+    
+  </div>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <h2 id="section-1">Section 1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus lacus quis pellentesque faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ligula enim, at faucibus leo vestibulum at. Nullam gravida bibendum sem at fermentum. Sed placerat in mauris eu ullamcorper. Suspendisse tincidunt tempor fringilla. Sed facilisis nisi ante, at faucibus magna hendrerit nec. Ut iaculis ac urna pulvinar iaculis. Ut convallis feugiat leo, et finibus mi egestas id. Quisque vel tempor odio. Donec et magna vel massa sagittis pulvinar. Pellentesque sit amet nunc massa.</p>
+<p>Mauris ut risus in urna faucibus ultricies a aliquam metus. Ut feugiat blandit dolor. Nulla tincidunt mauris et mi fermentum efficitur. Duis aliquet, odio eget pharetra laoreet, quam odio tempor arcu, id tempor est turpis tempor orci. Curabitur mattis elit vitae lacus pretium faucibus. Vivamus et augue lobortis, pretium arcu eu, faucibus leo. Curabitur sollicitudin lacinia lectus, condimentum tristique turpis tristique vel. Integer tristique felis et eros sollicitudin consectetur.</p>
+<p>Aliquam quis blandit ligula, nec consequat turpis. Morbi ultricies, mauris non mollis ornare, purus dolor finibus tortor, nec fermentum diam elit id odio. Phasellus tincidunt dictum libero, blandit feugiat nibh pulvinar eu. Vivamus tristique, erat ultrices rutrum faucibus, orci sapien semper tortor, id euismod est dui sed est. Nulla consectetur mattis leo, mollis faucibus nulla pretium fringilla. Nulla in aliquam massa. Quisque accumsan hendrerit eros, vel fringilla massa aliquet at. Mauris eu sollicitudin velit, ut consequat arcu. Aenean consectetur dui in justo malesuada, non viverra dui rhoncus. Aenean fringilla molestie tincidunt. Nullam sodales enim lacus, id pulvinar lacus ultrices eget. Fusce porta dui felis, nec mollis nisl lacinia id.</p>
+<p>Maecenas commodo consectetur leo vel finibus. Nunc blandit pretium placerat. Quisque non vulputate sem, et ultrices urna. Quisque ac dolor id nibh pretium sollicitudin. Mauris lacinia varius sapien, quis finibus elit ullamcorper ac. Nam quis tellus sed tortor molestie tincidunt. Etiam eu fermentum nisi, aliquet imperdiet velit. Nullam in ligula id purus convallis maximus vitae quis elit. Cras pretium iaculis pretium. Donec sollicitudin vitae turpis non consectetur.</p>
+<p>Mauris a sapien scelerisque, vehicula arcu non, ultrices mi. Vestibulum lacinia urna a ante fermentum, sit amet aliquet purus fringilla. Pellentesque eleifend, dui vitae fermentum pharetra, dui nisl pellentesque libero, quis volutpat lacus velit lacinia felis. Morbi dapibus vehicula orci, et maximus neque gravida id. Mauris dapibus eget ante ut varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eget sapien mattis, porttitor orci ut, volutpat sapien. Cras cursus posuere sem, a rutrum mi rhoncus tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque urna lacus, sagittis ut suscipit efficitur, tincidunt in ante.</p>
+<h2 id="section-2">Section 2</h2>
+<p>Praesent suscipit pulvinar ipsum, nec dapibus ligula suscipit at. Nullam accumsan ultrices sem eu posuere. Sed tempor malesuada enim ut porttitor. Integer consectetur tristique risus, eu aliquam felis tincidunt non. Duis blandit a nisi ut commodo. Integer tempor vitae sapien in pharetra. Praesent tempus lorem id sapien semper, sed rhoncus enim lacinia. Nullam quis euismod felis. Sed efficitur, ligula non congue consectetur, nunc risus dignissim orci, ut eleifend neque velit a tellus. Mauris mattis, odio ac auctor faucibus, magna sapien placerat ex, ac pulvinar diam est fringilla felis. Fusce ac dictum sem. Vivamus mi ex, maximus at sem et, congue accumsan urna. Vestibulum gravida ligula neque, eget aliquet justo sollicitudin ac. Integer vehicula, libero non laoreet commodo, lacus arcu rhoncus odio, nec ornare est ligula ac ante.</p>
+<p>Donec dictum arcu est, semper faucibus orci accumsan porttitor. In hac habitasse platea dictumst. Pellentesque semper felis venenatis sapien laoreet, quis dictum dui finibus. Donec condimentum diam magna, ac ornare nibh interdum vestibulum. Morbi a velit vitae.</p>
+
+    
+  </div>
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      subir
+    </a>
+  </div>
+  
+
+</div>
+
+
+      </main>
+    </div>
+
+    <footer>
+      
+
+
+
+    </footer>
+    
+  </body>
+
+  <script>
+
+  function isAuto() {
+    return document.body.classList.contains("auto");
+  }
+
+  function setTheme() {
+    if (!isAuto()) {
+      return
+    }
+
+    document.body.classList.remove("auto");
+    let cls = "light";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      cls = "dark";
+    }
+
+    document.body.classList.add(cls);
+  }
+
+  function invertBody() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+
+  if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+  }
+
+  setTheme();
+
+</script>
+
+</html>

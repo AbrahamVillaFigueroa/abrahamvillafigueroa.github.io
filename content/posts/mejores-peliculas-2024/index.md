@@ -1,0 +1,64 @@
++++
+title = "Las mejores películas de 2024"
+author = ["Abraham Villa Figueroa"]
+summary = "Otro año de darle al gusto lo que necesita más que lo que quiere"
+date = 2025-02-22
+draft = false
+toc = false
+readTime = false
+autonumber = false
+math = false
+showTags = true
+hideBackToTop = false
+hidePagination = true
++++
+
+## Encuesta anual {#encuesta-anual}
+
+Cada año, la revista _Nexos_ publica una encuesta sobre las mejores
+películas del año anterior. Esta ocasión me volvieron a invitar. Pueden
+encontrar [aquí](https://cultura.nexos.com.mx/las-mejores-peliculas-de-2024-segun-100-especialistas-iberoamericanos/) los resultados completos. Es un ejercicio interesante
+porque uno puede formarse una idea general de la cinefilia en México,
+que siempre merece algún comentario. Por ahora, me gustaría únicamente
+elaborar un poco sobre las razones que me motivaron mi selección.
+Debíamos escoger cinco películas estrenadas en México, o vistas por
+primera vez durante el 2024, y cinco películas del pasado que también
+hubiéramos descubierto ese año.
+
+
+## _Juror #2_, dir. Clint Eastwood {#juror-2-dir-dot-clint-eastwood}
+
+Hay una veta fuertemente moral en Eastwood: varios de sus
+personajes se sostienen debido a una convicción indivudal por hacer lo
+correcto, que intereses externos amenazan, o que se tambalea por sí sola debido a la inconsistencia de los seres humanos. Se trata de una forma de heroísmo simple y efectiva que requiere de mucha más habilidad fílmica de lo que su simple esquematismo dramático sugiere. Eastwood siempre ha sabido filmar la bondad natural de sus héroes, y con esa simpatía ha cultivado momentos de gran patetismo, en el buen sentido del término. En _Juror #2_,  la consciencia limpia del protagonista se descubre como algo peor que perverso: la facilidad con la que se deshace de la responsabilidad de haber matado, aunque fuera accidentalmente, a una mujer da cuenta de lo difícil que es ser justo en una sociedad que parece más preocupada por reafirmar sus prejuicios que por descubrir y enfrentar la verdad. Hay una inversión de papeles hacia el final que no recuerdo haber visto en otra película es Esatwood. El personaje de Toni Colette, una fiscal que parece más preocupada por ganar casos para avanzar su carrera política que por hacer justicia, es al final la única persona inconforme por la aberración que se ha cometido, y, además, parece dispuesta a hacer algo al respecto.  La escena última, una suerte de puesta en abismo que sólo lo es aparentemente, materializa la necesidad definitiva que cada plano de la película ha construido, y que alcanza una suerte de abstracción radical en ese momento: hay que aceptar la justicia venga de quien venga, y aunque pague un hombre que tal vez no lo merece. Hay algo despiadado, agridulce y poco tranquilizador que en el rostro profundamente resignado de Toni Colette casi adquiere el peso del destino. Simplemente es imposible escapar de él. He ahí la tragedia humana en su esplendor más completo.
+
+
+## _A Spoiling Rain_, dir. Haruhiko Arai {#a-spoiling-rain-dir-dot-haruhiko-arai}
+
+Arai es un cineasta excéntrico por la manera en que su sensibilidad hedonista ha sobrevivido en medio de líneas clásicas. Hoy en día, son pocos los cinestas que filman de manera «clásica» y orgánica a la vez. Cuando digo «clásico», más que el la narración suscinta, personajes precisos y estructuras dramáticas tradicionales, pienso en la cualidad de saberse dentro de una tradición con referentes temáticos y estilísticos más o menos establecidos y lo suficientemente presentes en la mente del público y de los realizadores como para dejar de lado un ánimo rupturista y concentrarse más bien en extender, ahondar, continuar por los caminos ya inaugurados. En una tradición clásica, los referentes son claros. Y más que negarlos, ironizar sobre ellos o «intervenirlos», se los asume cono inherentemente valiosos y dignos de repetición. Buena parte de los mayores fiascos del cine contemporáneo nacen de una clara incapacidad de repetir a los clásicos, particularmente en el cine estadounidense (basta ver, por ejemplo, un par de encuadres de _Anora_ para constatar lo difícil que se ha vuelto encuadrar decentemente incluso para uno de los directores más capaces y reconocidos de esa industria). Con Arai sucede exactamente lo contrario, en cada plano de esta película uno puede ver juegos de luces y sombras, distribución espacial y un _tempo_ aprehendidos de lo mejor de la historia del cine japonés. El refinamiento sensible, sin embargo, no ahoga a la cinta. Le permite llevarnos por un relato de decadencia y melancolía que tiene algo de la sordidez nihilista de Oshima y de la delicadeza dramática de Ozu. Y un humor, también, que resalta como destellos de luz en un paisaje de sombras. Pocas historias son más bellas y tristes que esta.
+
+
+## _Menu-Plasirs — Les Trois Gras_, dir. Frederick Wiseman {#menu-plasirs-les-trois-gras-dir-dot-frederick-wiseman}
+
+No sabía si poner a Wiseman en esta lista por la sencilla razón de que desalienta un poco que lo mejor del 2024 provenga de un cineasta de más de 90 años que lleva haciendo el mismo tipo de películas desde hace más de medio siglo. Pero no recordé otra película que me haya hecho mirar con tanta atención e interés una serie de hechos. En ese sentido, la película es casi una serie de viñetas sobre lo que sucede alrededor del restaurante francés y la familia que lo dirige. Y en cada breve momento se descubre algo de la fascinación que su cocina despierta en Wiseman, en los comensales y en los que participan en su realización. Esta película de Wiseman es sobre un oficio más que sobre un evento o fenómeno social: rezuma amor al arte y al detalle. Hay poco drama, pocas discusiones, y predomina el regocijo sensible. Es una película feliz y cómodamente burguesa en lo que la burguesía tiene de agradable: ligereza de espíritu, una seriedad rigurosa que es inseparable de un gusto por la forma, y una entrega absoluta a la sistematización cristalina de los impulsos propios. Pensé en poner en este lugar _Youth (Spring)_, de Wang Bing, otro cineasta en muchos sentidos afín a Wiseman, pero no lo hice porque predominó en mí la impresión de que Wang avanzaba entre la maleza buscando, pero a veces daba vueltas en círculos y se esforzaba demasiado en llegar a un punto y rozarlo apenas. En cambio, Wiseman llega siempre al instante preciso y sin rodeos.
+
+
+## _Chime_, dir. Kiyoshi Kurosawa {#chime-dir-dot-kiyoshi-kurosawa}
+
+Quizá fue esta mi película reciente favorita del año. Soy un admirador total del cine de Kurosawa, y esta película me convenció de los que he llegado a percibir como sus mayores talentos: la abstracción atmosférica capaz de crear tonos emocionales inmersivos con apenas un par de planos, la presentación de los movimientos humanos como una incógnita que participa del drama en un papel material y plástico antes que psicológico, la realidad onírica de sus relatos que permite ahondar en los conjuntos expresivos, la flexibilidad absoluta de la línea de la acción, y la prioridad lógica de los efectos de la puesta en escena. El de Kurosawa es un cine donde las cosas pasan y luego las entendemos, si es que las contendemos, pero nunca dejamos de sentirlas. Aquí se trata de la sutileza del horror, de lo difícil que es  situar el origen del terror, de lo absolutamente irreductible que es el miedo. O quizá es solo una pesadilla. Lo más cerca que ha estado el cine de filmar una pesadilla, es decir, de materializar sueños que olvidamos justo después de despertar, cuándo no recordamos exactamente qué pasó pero permanece el horror. Esto es esta película. Siendo poco generoso, diría que se trata de una prueba de lo hábil que se ha vuelto Kurosawa para la retórica del suspenso, es decir, para manejar los adornos estilísticos que crean la sensación de una amenaza latente más allá de cualquier hecho o relato concreto. El problema de ese juicio es que el relato no es vacío, al contrario, lo que es realmente ambiguo es la retórica: la película produce miedo porque filma con entera naturalidad la oscuridad de su personaje principal —en ambos sentidos: la negrura de su alma, su maldad; pero también su hermetismo, su locura, su incapacidad de explicarse—. Los efectos más claros (el grano, la iluminación, la presentación misteriosa de los actos) son «expresivos» justamente porque son ambiguos, tienden hacia la abstracción total. Por eso Kurosawa se ha vuelto un virtuoso de la puesta en escena: el trazo de lo movimientos, el ritmo, la iluminación, la unidad espacio-temporal que se carga poco a poco de un aire ominoso no son «efectos»: constituyen la transparencia misma del fenómeno filmado y revelan así su esencia terrible. En su cine, las pesadillas y su vivencia emocional son indistinguibles de la realidad.
+
+
+## _Cloud_, dir. Kiyoshi Kurosawa {#cloud-dir-dot-kiyoshi-kurosawa}
+
+También dudé mucho en incluir esta película porque: 1) ya había decidido incluir otra de Kurosawa, _Chimes_, que me parece superior a esta; y 2) había muchas otras buenas películas que merecían mención y no incluirlas parecía cerrar demasiado la lista alrededor de un solo director. Sin embargo, me convencí de incluirla porque _Cloud_ es una película infinitamente más divertida y original que cualquier otra cosa que haya visto el año pasado. Empieza como la promesa de un _thriller_ que parece dirigirse hacia el género de _home invasion_, pero en la última tercera parte se convierte en una película, entre absurda y cómica, de acción. Los _yakuza_ se involucran por motivos no exactamente claros, la traición de la amante no se hace esperar, así como tampoco la satisfacción de la sed de venganza. Así dicho, _Cloud_ parece una mezcla desordenada de motivos del cine de género, pero Kurosawa supo construir una película que deriva de una situación a otra con entera libertad y sin necesidad de dar explicaciones. Su hábil manejo de la puesta en escena se ejecuta aquí con una espontaneidad que remite a la improvisación, como sucede en otras de sus películas. Su gran cualidad es la sorpresa y la inventiva, que parecen incansables. En cualquier momento de la última parte, resulta imposible prever qué es lo que vendrá. Cuando acontece, sin embargo, es casi obvio que no podía ser de otra manera. La sistematicidad de Kurosawa muestra aquí que el cineasta japonés ha logrado lo que muy pocos: inocular la imprevisibilidad justo cuando pensamos que estamos ante una película primordialmente esquemática.
+
+
+## Sobre el cine del pasado {#sobre-el-cine-del-pasado}
+
+Podría extenderme mucho más sobre cualquiera de estas películas, pero su variedad y su dispersión me dificultan reunirlas en un comentario más elaborado. Las hila el accidente de haberlas visto por primera vez el año pasado. De todas maneras, merecen un mención breve aquí:
+
+-   _La maman et la putain_, dir. Jean Eustache, 1974. Proyectaron la versión restaurada en la Cineteca Nacional. Su retrato del amor como padecimiento, y de la angustia de sus estímulos contradictorios, es decadente y vital como solo cierto espíritu de juventud puede sentir frente a un abismo que no tiene nombre y que es indistinguible de la inconformidad frívola de los románticos.
+-   _Imaginary Light_, Andrew Noren, 1994. La vi en el Festival Internacional de Cine de la UNAM. Luces y sombras que se convierten en figuras, negrura y destellos a un ritmo frenético. Sus transformaciones abstractas hacen que las formas en blanco y negro del celuloide devengan casi pura estimulación mental y sensorial. Es sobrecogedor pero también muy bello.
+-   _Quatre nuits d’un rêveur_, Robert Bresson, 1971. Exhibieron la restauración en el Festival de Cine de Morelia. Bresson sigue aquí los pasos de otro personaje consumido por el amor, de otro gran romántico. A diferencia de Eustache, la suya es una visión menos frívola, pero también menos angustiante y más honda. Sus encuadres, más cerrados y precisos, siempre ofrecen una satisfacción sensible que muchas veces se desapega del drama del personaje. La suya es una visión quizá más triste, pero también más serena, del amor.
+-   _Across the Bridge_, Ken Annakin, 1957. La vi también en el Festival de Cine de Morelia. Le dediqué un apartado en la primera entrada de este blog.
+-   _Buchanan Rides Alone_, Budd Boetticher, 1958. También en el Festival de Cine de Morelia. Boetticher filma la solidez moral de los hombres como si filmara un ocaso: siempre al borde de la desaparición, pero sin angustia. La certitud que hay en cada plano se parece a la confianza de un hombre que sabe que siempre vuelve a amanecer. Nunca un héroe tan obvio se encontró en una situación tan irresoluble y de todas maneras salió al paso como aquí. Esa es también una forma de soledad: sólo alguien que no tiene nada ni a nadie que perder asume semejante riesgo sin perder la compostura.
