@@ -27,16 +27,13 @@ hidePagination: true
 [Sobre *Leto*, de Kirill Serébrennikov, en *Revista Icónica*](https://revistaiconica.com/leto-kirill-serebrennikov/) \
 [Sobre el cine de Seijun Suzuki, en *Revista Icónica*](https://revistaiconica.com/seijun-suzuki-los-senderos-de-la-furia/) \
 [Sobre *Ana y Bruno*, de Carlos Carrera, en *Revista Icónica*](https://revistaiconica.com/ana-y-bruno/) \
-[Sobre *Nomadland*, de Chloé Zao, en *Revista Correspondencias*](http://correspondenciascine.com/2020/12/nomadland-de-chloe-zhao/) \
-[Sobre *How Green Was My Valley!*, de John Ford, en *Revista Correspondencias*](http://correspondenciascine.com/2020/05/que-verde-era-mi-valle-la-encarnacion-de-la-nostalgia/) \
-[Sobre *El automóvil gris*, de Enrique Rosas, en *Revista Correspondencias*](http://correspondenciascine.com/2020/05/que-verde-era-mi-valle-la-encarnacion-de-la-nostalgia/) \
-[Sobre *One Day in the Life of Noah Piugattuk*, de Zacharias Kunuk, en *Revista Correspondencias*](http://correspondenciascine.com/2020/02/quebecine-2020-un-dia-en-la-vida-de-noah-piugattuk-de-zacharias-kanuk/) \
-[Sobre *Suburban Birds*, de Qiu Sheng, en *Revista Correspondencias*](http://correspondenciascine.com/2020/02/quebecine-2020-un-dia-en-la-vida-de-noah-piugattuk-de-zacharias-kanuk/) \
-[Sobre el cine de Luis Buñuel, en *Revista Correspondencias*](http://correspondenciascine.com/2019/09/la-mirada-cruel-luis-bunuel-y-el-azar/) \
-[Sobre *Monrovia, Indiana*, de Frederick Wiseman, en *Revista Correspondencias*](http://correspondenciascine.com/2019/07/monrovia-indiana-de-frederick-wiseman/) \
 [Sobre el recurso de la voz superpuersta, en *Pulsar*](https://pulsar.escine.mx/el-cine-invisible-defensa-de-la-voz-superpuesta/) \
 [Sobre *La Tortue Rouge*, de Michaël Dudok de Wit, en *Nexos*](https://cultura.nexos.com.mx/la-tortuga-roja-los-relatos-del-silencio/) \
 [Sobre *Get Out*, de Jordan Peele, en *Nexos*](https://cultura.nexos.com.mx/huye/)
+
+## In English
+[Essay on Julio Bracho for the Locarno Film Festival](docs/essay-on-julio-bracho.pdf) \
+[Article on two films by Rogério Sganzerla](docs/essay-on-sganzerla.pdf)
 
 ## Traducciones
 [«Coriolano», de William Hazlitt, en *Nexos*](https://cultura.nexos.com.mx/coriolano/) \
