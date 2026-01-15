@@ -93,3 +93,37 @@
     font-style: italic;
     font-display: swap;
 }
+
+
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('/fonts/equity/equity_text_a_regular-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('/fonts/equity/equity_text_a_italic-webfont.ttf') format('ttf');
+    font-weight: light;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('/fonts/equity/equity_text_a_bold-webfont.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Equity Text A';
+    src: url('/fonts/equity/equity_text_a_bold_italic-webfont.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}

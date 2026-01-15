@@ -7,7 +7,7 @@
     --header-menu-top-gap: 1rem;
 
     /* Typography */
-    --font-body: "IBM Plex Sans", sans;
+    --font-body: "Equity Text A", serif;
     --font-mono: "IBM Plex Mono", monospace;
     --font-headings: "IBM Plex Mono", monospace;
 
@@ -18,7 +18,7 @@
     --h2-margin-bottom: 0.3rem;
     --hx-margin-top: 0rem;
     --hx-margin-bottom: 0rem;
-    --p-margin-top: 1rem;
+    --p-margin-top: 0.5rem;
     --p-margin-bottom: 1rem;
     --code-margin-top: 2rem;
     --code-margin-bottom: 2rem;
