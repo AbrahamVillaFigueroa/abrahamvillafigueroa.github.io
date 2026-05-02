@@ -1,0 +1,21 @@
+---
+layout: base.njk
+pagination:
+  data: collections.orgTags
+  size: 1
+  alias: tagObj
+permalink: /weblog/etiquetas/{{ tagObj.tagName | slugify }}/
+eleventyComputed:
+  title: "{{ tagObj.tagName }}"
+---
+<section class="writing-index">
+  <p class="tag-heading">#{{ tagObj.tagName }}</p>
+
+  <ol class="post-list">
+    {% for post in tagObj.posts %}
+    <li class="post-list-item">
+      <a href="/weblog/{{ post.data.slug | stripLeadingSlash }}/" class="post-list-link">{{ post.date | isoDate | replace("-", "_") }}--{{ post.title }}{% if post.tags %}<span class="post-list-tags"> // {% for tag in post.tags %}#{{ tag }}{% if not loop.last %} {% endif %}{% endfor %}</span>{% endif %}</a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

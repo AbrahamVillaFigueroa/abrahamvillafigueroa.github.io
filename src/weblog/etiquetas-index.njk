@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Etiquetas
+permalink: /weblog/etiquetas/
+---
+<section class="writing-index">
+  <ol class="post-list">
+    {% for tagObj in collections.orgTags %}
+    <li class="post-list-item">
+      <a href="/weblog/etiquetas/{{ tagObj.tagName | slugify }}/" class="post-list-link">#{{ tagObj.tagName }}</a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

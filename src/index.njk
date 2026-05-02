@@ -1,0 +1,33 @@
+---
+layout: home.njk
+title: Inicio
+---
+<section class="home">
+  <div class="home-intro">
+	<p>
+	  Estudié filosofía en la UNAM y relaciones internacionales en El Colegio de México.
+	</p>
+	<p>
+	  Escribo crítica literaria y cinematográfica, y edito <a href=https://elcineprobablemente.com/><em>El Cine Probablemente</em></a>, una revista de cine impresa.
+	</p>
+	<p>
+	  A veces traduzco.</p><p>He trabajado con varios festivales de cine.</p>
+	<p>
+	  Aquí pueden encontrar una lista con mis textos publicados y algunas entradas de blog.
+	</p>
+  </div>
+
+  {% if collections.org.length %}
+  <section class="home-recent">
+    <h2>::Reciente::</h2>
+    <ol class="post-list">
+      {% for post in collections.org | head(3) %}
+      <li class="post-list-item">
+        <a href="/weblog/{{ post.data.slug | stripLeadingSlash }}/" class="post-list-link">{{ post.date | isoDate | replace("-", "_") }}--{{ post.title }}{% if post.tags %}<span class="post-list-tags"> // {% for tag in post.tags %}#{{ tag }}{% if not loop.last %} {% endif %}{% endfor %}</span>{% endif %}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {% endif %}
+</section>

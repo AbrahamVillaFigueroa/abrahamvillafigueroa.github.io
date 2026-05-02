@@ -1,0 +1,25 @@
+---
+permalink: /weblog/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ site.url }}/weblog/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <id>{{ site.url }}/</id>
+  <author>
+    <name>{{ site.author.name }}</name>
+    <email>{{ site.author.email }}</email>
+  </author>
+  {% for post in collections.org | head(20) %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ site.url }}/weblog/{{ post.data.slug | stripLeadingSlash }}/"/>
+    <updated>{{ post.date | isoDate }}T00:00:00Z</updated>
+    <id>{{ site.url }}/weblog/{{ post.data.slug | stripLeadingSlash }}/</id>
+    <content type="html"><![CDATA[{{ post.content | safe }}]]></content>
+  </entry>
+  {% endfor %}
+</feed>

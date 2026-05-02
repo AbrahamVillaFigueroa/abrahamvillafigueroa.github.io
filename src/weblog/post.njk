@@ -1,0 +1,36 @@
+---
+layout: base.njk
+pagination:
+  data: collections.org
+  size: 1
+  alias: post
+permalink: /weblog/{{ post.data.slug | stripLeadingSlash }}/
+eleventyComputed:
+  title: "{{ post.title }}"
+---
+<article class="post">
+  <header class="post-header">
+    <div class="post-title-row">
+      <h1 class="post-title">{{ post.title }}</h1>
+      <time class="post-title-date" datetime="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time>
+    </div>
+    <div class="post-dateline" aria-hidden="true"></div>
+  </header>
+
+  <div class="post-body">
+    {{ post.content | demoteHeadings | safe }}
+  </div>
+
+  {% if post.tags %}
+  <ul class="post-tags">
+    {% for tag in post.tags %}
+    <li><a href="/weblog/etiquetas/{{ tag | slugify }}/">#{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <nav class="post-nav">
+    <a href="/weblog/">atrás</a>
+    <a href="/weblog/feed.xml">RSS</a>
+  </nav>
+</article>

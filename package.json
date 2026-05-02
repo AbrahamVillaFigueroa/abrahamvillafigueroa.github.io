@@ -1,0 +1,15 @@
+{
+  "name": "new-website",
+  "version": "1.0.0",
+  "description": "Personal website and blog",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve --watch"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.0",
+    "eleventy-plugin-org": "^1.2.0"
+  }
+}
