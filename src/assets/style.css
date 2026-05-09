@@ -32,7 +32,7 @@
   --accent:   #890017;
   --fg:       #1a1a1a;
   --fg-muted: #666;
-  --bg:       #D8D8D8;
+  --bg:       #EFEFEF;
   --border:   #e0ddd8;
 
   --measure: 66ch;
@@ -67,7 +67,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--serif);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 
@@ -107,7 +107,7 @@ time {
 /* ── Header / Nav ───────────────────────────────────────── */
 .site-header {
   padding-block: 1.0rem;
-  margin-bottom: 1.0rem;
+  margin-bottom: 3rem;
 }
 
 .site-nav {
@@ -154,8 +154,8 @@ time {
 
 
 /* ── Homepage ───────────────────────────────────────────── */
-.home { font-family: var(--mono); }
-.home-intro { margin-bottom: 1em; }
+.home { font-family: var(--serif); }
+.home-intro { margin-bottom: 3rem; }
 .home-intro p { margin-bottom: 1em; }
 .home-intro h1 { font-size: 2rem; margin-bottom: 0.75rem; }
 
@@ -163,14 +163,27 @@ time {
   font-family: var(--mono);
   font-size: 1.1rem;
   font-weight: normal;
-  color: var(--fg);
+  color: var(--fg-muted);
   margin-bottom: 0;
   overflow: hidden;
   white-space: nowrap;
 }
+.home-recent-label { color: var(--fg); }
+
 .home-recent h2::after {
   content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
   color: var(--fg-muted);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-icons a,
+.nav-icons button {
+  display: flex;
+  align-items: center;
 }
 
 .nav-email {
@@ -183,33 +196,29 @@ time {
 .nav-email i, .theme-toggle i { font-size: 1.1rem; }
 
 /* ── Post list ──────────────────────────────────────────── */
+.post-list-date::after { content: "--"; }
 .post-list {
   list-style: none;
   margin: 0;
   padding: 0;
   font-family: var(--mono);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 .post-list-item + .post-list-item {
-  margin-top: 1em;
+  margin-top: 0.15em;
 }
 
 .post-list-link {
   color: var(--fg);
   text-decoration: none;
   display: block;
-  padding-left: 13ch;
-  text-indent: -13ch;
+  padding-left: 12ch;
+  text-indent: -12ch;
 }
 .post-list-link:hover { color: var(--accent); text-decoration: underline; }
-.post-list-tags {
-  display: none;
-}
-.post-list-link:hover .post-list-tags {
-  display: inline;
-  color: var(--accent);
-}
+.post-list-title { font-family: var(--serif); }
+.post-list-tags { display: none; }
 
 /* ── Tag nav ────────────────────────────────────────────── */
 .tag-nav {
@@ -245,8 +254,9 @@ time {
 
 /* ── Publicaciones ──────────────────────────────────────── */
 .publicaciones {
-  font-family: var(--mono);
-  font-size: 1.1rem;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 .publicaciones h2 {
   font-family: var(--mono);
@@ -275,7 +285,7 @@ time {
 .writing-index h1 { margin-bottom: 1.5rem; }
 .tag-heading {
   font-family: var(--mono);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1em;
 }
 
@@ -352,6 +362,44 @@ time {
 }
 .post-body p:has(> img) + p { text-indent: 0; }
 
+/* ── Footnote tooltip ───────────────────────────────────── */
+.fn-tooltip {
+  position: fixed;
+  max-width: 32ch;
+  max-height: 10lh;
+  overflow-y: auto;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0.5em 0.75em;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 100;
+}
+.fn-tooltip--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Footnotes ──────────────────────────────────────────── */
+.footnote-definition {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: calc(var(--post-font-size) * 0.85);
+  margin-bottom: 1em;
+}
+.footnote-definition sup { flex-shrink: 0; }
+.footnote-definition .footdef { margin: 0; }
+.footnote-definition .footdef p {
+  font-size: inherit;
+  text-indent: 0;
+  margin: 0;
+}
+
 .post-nav {
   display: flex;
   justify-content: center;
@@ -367,14 +415,45 @@ time {
 
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 600px) {
-  body { font-size: 1rem; }
+  body { font-size: 0.95rem; }
 
   .site-header,
   .main-content { padding-inline: 1.25rem; margin-inline: auto; }
 
-  .post-list-item {
-    flex-direction: column;
-    gap: 0.2rem;
+  /* 1. Nav: name first, then text+icon links below */
+  .site-nav {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.25rem;
   }
-  .post-list-item a { white-space: normal; }
+  .nav-home  { order: 1; flex-basis: 100%; }
+  .nav-links { order: 2; flex-basis: 100%; flex-direction: column; gap: 0.4rem; }
+
+  /* Undo explicit font-size overrides so they inherit the smaller body size */
+  .post-list,
+  .home-recent h2,
+  .publicaciones,
+  .publicaciones h2 { font-size: inherit; }
+
+  /* 2. Weblog post list: date on its own line, title + tags below */
+  .post-list-link {
+    display: block;
+    padding-left: 0;
+    text-indent: 0;
+  }
+  .post-list-date  { display: block; font-size: 0.9em; }
+  .post-list-date::after { content: none; }
+  .post-list-title { display: block; }
+
+  /* 3. Individual post header: title, then date, then dateline */
+  .post-title-row {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  /* 4. Tooltip: clamp to viewport near cursor */
+  .fn-tooltip {
+    position: fixed;
+    max-width: calc(100vw - 2rem);
+  }
 }

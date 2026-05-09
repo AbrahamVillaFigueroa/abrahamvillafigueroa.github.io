@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/docs");
+  eleventyConfig.addPassthroughCopy("src/icons");
 
   // Return the first N items of an array
   eleventyConfig.addFilter("head", (arr, n) =>
@@ -22,6 +23,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("stripLeadingSlash", (str) =>
     typeof str === "string" ? str.replace(/^\//, "") : str
   );
+
+  // Rename "Footnotes:" heading to Spanish
+  eleventyConfig.addFilter("localizeFootnotes", (html) => {
+    if (typeof html !== "string") return html;
+    return html.replace(/<h2>Footnotes:<\/h2>/g, "<h2>Notas al pie</h2>");
+  });
+
+  // Fix footnote hrefs: the org plugin uses the slug (/slug#fn.N) but the
+  // actual page lives at /weblog/slug/, so links 404. Rewrite them to just #fn.N.
+  eleventyConfig.addFilter("fixFootnoteLinks", (html) => {
+    if (typeof html !== "string") return html;
+    return html
+      .replace(/href="[^"]*#(fn\.[^"]+)"/g, 'href="#$1"')
+      .replace(/href="[^"]*#(fnr\.[^"]+)"/g, 'href="#$1"');
+  });
 
   // Demote h1→h2 in org post content so body headings sit below the post title
   eleventyConfig.addFilter("demoteHeadings", (html) => {

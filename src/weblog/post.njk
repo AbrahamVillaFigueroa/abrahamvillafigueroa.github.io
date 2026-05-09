@@ -18,7 +18,7 @@ eleventyComputed:
   </header>
 
   <div class="post-body">
-    {{ post.content | demoteHeadings | safe }}
+    {{ post.content | demoteHeadings | localizeFootnotes | fixFootnoteLinks | safe }}
   </div>
 
   {% if post.tags %}
@@ -31,6 +31,5 @@ eleventyComputed:
 
   <nav class="post-nav">
     <a href="/weblog/">atrás</a>
-    <a href="/weblog/feed.xml">RSS</a>
   </nav>
 </article>

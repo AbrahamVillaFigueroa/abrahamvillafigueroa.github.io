@@ -5,13 +5,13 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.title }}</title>
-  <subtitle>{{ site.description }}</subtitle>
+  <subtitle>Weblog</subtitle>
   <link href="{{ site.url }}/weblog/feed.xml" rel="self"/>
   <link href="{{ site.url }}/"/>
   <id>{{ site.url }}/</id>
   <author>
     <name>{{ site.author.name }}</name>
-    <email>{{ site.author.email }}</email>
+    <uri>https://letterbird.co/a-v-f</uri>
   </author>
   {% for post in collections.org | head(20) %}
   <entry>

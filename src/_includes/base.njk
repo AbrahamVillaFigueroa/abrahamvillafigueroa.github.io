@@ -6,7 +6,12 @@
   <title>{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="alternate" type="application/atom+xml" href="/weblog/feed.xml" title="{{ site.title }}">
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="https://umami.abrahamvillafigueroa.xyz/script.js" data-website-id="02d45e2e-b781-4ba6-86b0-387371072d6a"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
   <script>
@@ -23,16 +28,18 @@
       <ul class="nav-links">
         <li><a href="/publicaciones/" {% if page.url == "/publicaciones/" %}aria-current="page"{% endif %}>publicaciones</a></li>
         <li><a href="/weblog/" {% if page.url.startsWith("/weblog") %}aria-current="page"{% endif %}>weblog</a></li>
-        <li><a href="/weblog/etiquetas/" {% if page.url == "/weblog/etiquetas/" %}aria-current="page"{% endif %} aria-label="Etiquetas"><i class="fa-solid fa-hashtag"></i></a></li>
+        <li class="nav-icons">
+          <a href="/weblog/etiquetas/" {% if page.url == "/weblog/etiquetas/" %}aria-current="page"{% endif %} aria-label="Etiquetas"><i class="fa-solid fa-hashtag"></i></a>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" onclick="
+            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            this.innerHTML = next === 'dark' ? '<i class=\'fa-solid fa-sun\'></i>' : '<i class=\'fa-solid fa-moon\'></i>';
+          "><i class="fa-solid fa-sun"></i></button>
+          <a href="https://letterbird.co/a-v-f" class="nav-email" aria-label="Contacto"><i class="fa-solid fa-envelope"></i></a>
+          <a href="/weblog/feed.xml" class="nav-email" aria-label="RSS"><i class="fa-solid fa-rss"></i></a>
+        </li>
       </ul>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" onclick="
-        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        this.innerHTML = next === 'dark' ? '<i class=\'fa-solid fa-sun\'></i>' : '<i class=\'fa-solid fa-moon\'></i>';
-      "><i class="fa-solid fa-sun"></i></button>
-      <a href="https://letterbird.co/a-v-f" class="nav-email" aria-label="Contacto"><i class="fa-solid fa-envelope"></i></a>
-      <a href="/weblog/feed.xml" class="nav-email" aria-label="RSS"><i class="fa-solid fa-rss"></i></a>
     </nav>
   </header>
 
@@ -45,6 +52,63 @@
       var btn = document.getElementById('theme-toggle');
       if (btn) {
         btn.innerHTML = document.documentElement.getAttribute('data-theme') === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+      var tooltip = document.createElement('div');
+      tooltip.className = 'fn-tooltip';
+      document.body.appendChild(tooltip);
+
+      var activeRef = null;
+
+      document.querySelectorAll('a.footref').forEach(function (ref) {
+        var targetId = ref.getAttribute('href').replace('#', '');
+        var def = document.getElementById(targetId);
+        if (!def) return;
+        var text = def.closest('.footnote-definition').querySelector('.footdef').textContent.trim();
+
+        ref.addEventListener('mouseenter', function (e) {
+          activeRef = ref;
+          tooltip.textContent = text;
+          tooltip.classList.add('fn-tooltip--visible');
+          position(e);
+        });
+        ref.addEventListener('mousemove', function (e) {
+          if (!tooltip.matches(':hover')) position(e);
+        });
+        ref.addEventListener('mouseleave', function () {
+          setTimeout(function () {
+            if (!tooltip.matches(':hover')) hide();
+          }, 80);
+        });
+      });
+
+      tooltip.addEventListener('mouseleave', hide);
+
+      function hide() {
+        tooltip.classList.remove('fn-tooltip--visible');
+        activeRef = null;
+      }
+
+      function position(e) {
+        var pad = 12;
+        var tw = tooltip.offsetWidth;
+        var th = tooltip.offsetHeight;
+        var vw = window.innerWidth;
+        var vh = window.innerHeight;
+        var x = e.clientX + pad;
+        var y = e.clientY - th - pad;
+        if (x + tw > vw - pad) x = e.clientX - tw - pad;
+        if (x < pad) x = pad;
+        if (y < pad) y = e.clientY + pad;
+        if (y + th > vh - pad) y = vh - th - pad;
+        tooltip.style.left = x + 'px';
+        tooltip.style.top  = y + 'px';
       }
     })();
   </script>
