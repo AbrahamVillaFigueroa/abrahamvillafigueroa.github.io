@@ -11,6 +11,8 @@
 + [[https://lanocheavanzacine.blogspot.com/][La noche avanza]]
 + [[https://postcefalu.blogspot.com/][un blog comme les autres]]
 + [[https://criticismo.com/][Criticismo]]
++ [[https://sixcent.info/#book][Six Centuries of Type & Printing]]
++ [[https://practicaltypography.com/][Practical Typography]]
 * Tecnología
 + [[https://suckless.org/][Suckless.org]]
 + [[https://www.11ty.dev/][11ty.]] Generador de páginas estáticas con el que se hizo este sitio web.
