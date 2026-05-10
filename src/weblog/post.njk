@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: post.njk
 pagination:
   data: collections.org
   size: 1
@@ -12,8 +12,9 @@ eleventyComputed:
   <header class="post-header">
     <div class="post-title-row">
       <h1 class="post-title">{{ post.title }}</h1>
-      <time class="post-title-date" datetime="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time>
     </div>
+    <p class="post-byline">Por {{ site.author.name }}</p>
+    <time class="post-title-date" datetime="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time>
     <div class="post-dateline" aria-hidden="true"></div>
   </header>
 
@@ -30,6 +31,16 @@ eleventyComputed:
   {% endif %}
 
   <nav class="post-nav">
-    <a href="/weblog/">atrás</a>
+    {% if pagination.nextPageHref %}
+      <a href="{{ pagination.nextPageHref }}" aria-label="Entrada anterior"><i class="fa-solid fa-arrow-left"></i></a>
+    {% else %}
+      <span class="post-nav-disabled"><i class="fa-solid fa-arrow-left"></i></span>
+    {% endif %}
+    <a href="/weblog/" aria-label="Subir"><i class="fa-solid fa-arrow-up"></i></a>
+    {% if pagination.previousPageHref %}
+      <a href="{{ pagination.previousPageHref }}" aria-label="Entrada siguiente"><i class="fa-solid fa-arrow-right"></i></a>
+    {% else %}
+      <span class="post-nav-disabled"><i class="fa-solid fa-arrow-right"></i></span>
+    {% endif %}
   </nav>
 </article>

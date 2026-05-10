@@ -1,0 +1,23 @@
+#+TITLE: Enlaces
+#+DATE: 2026-01-01
+
+* Sitios personales
++ [[https://letterboxd.com/aavilla/][Mi cuenta de Letterboxd.]] Donde registro las películas que veo.
++ [[https://elcineprobablemente.com/][El Cine Probablemente.]] Revista de cine que edito con mis amigos.
+* Lecturas recomendadas 
++ [[https://britannica11.org/][Enciclopedia Británica, 11ª edición]] 
++ [[https://theuntranslated.wordpress.com/about/][The Untranslated]]
++ [[https://www.realclearbooks.com/][Real Clear Books]]
++ [[https://lanocheavanzacine.blogspot.com/][La noche avanza]]
++ [[https://postcefalu.blogspot.com/][un blog comme les autres]]
++ [[https://criticismo.com/][Criticismo]]
+* Tecnología
++ [[https://suckless.org/][Suckless.org]]
++ [[https://www.11ty.dev/][11ty.]] Generador de páginas estáticas con el que se hizo este sitio web.
++ [[https://www.gnu.org/software/emacs/][Emacs]]
++ [[https://terminaltrove.com/][Terminal Trove]]
++ [[https://kindlemodding.org/][Kindle Modding]]
+* Miscelánea
++ [[https://www.underground-homes.com/][Underground Homes.]] Por si acaso.
++ [[https://thejang.com/textures/][Texture Station]]
++ [[https://sci-hub.mx/][Sci-hub]]

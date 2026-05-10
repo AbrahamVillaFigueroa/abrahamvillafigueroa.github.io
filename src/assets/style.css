@@ -1,33 +1,57 @@
 /* ── Fonts ──────────────────────────────────────────────── */
 @font-face {
-  font-family: "IBM Plex Sans";
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.ttf") format("truetype");
+  font-family: "Valkyrie";
+  src: url("/assets/fonts/valkyrie/valkyrie-t3.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "IBM Plex Sans";
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Italic.ttf") format("truetype");
+  font-family: "Valkyrie";
+  src: url("/assets/fonts/valkyrie/valkyrie-t3-italic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
-  font-family: "IBM Plex Sans";
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.ttf") format("truetype");
+  font-family: "Valkyrie";
+  src: url("/assets/fonts/valkyrie/valkyrie-t3-bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "IBM Plex Sans";
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-BoldItalic.ttf") format("truetype");
+  font-family: "Valkyrie";
+  src: url("/assets/fonts/valkyrie/valkyrie-t3-bold-italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Triplicate";
+  src: url("/assets/fonts/triplicate/triplicate-t4.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Triplicate";
+  src: url("/assets/fonts/triplicate/triplicate-t4-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Triplicate";
+  src: url("/assets/fonts/triplicate/triplicate-t4-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Triplicate";
+  src: url("/assets/fonts/triplicate/triplicate-t4-bold-italic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
 
 /* ── Variables ─────────────────────────────────────────── */
 :root {
-  --serif: "IBM Plex Sans", system-ui, "Helvetica Neue", Arial, sans-serif;
-  --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --serif: "Valkyrie", Georgia, serif;
+  --mono: "Triplicate", "SFMono-Regular", Consolas, monospace;
 
   --accent:   #890017;
   --fg:       #1a1a1a;
@@ -35,9 +59,9 @@
   --bg:       #EFEFEF;
   --border:   #e0ddd8;
 
-  --measure: 66ch;
+  --measure: 38rem;
   --space:   1.0rem;
-  --post-font-size: 1.2rem;
+  --post-font-size: 1.333rem;
 }
 
 [data-theme="dark"] {
@@ -67,7 +91,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--serif);
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
@@ -98,6 +122,7 @@ time {
 
 /* ── Layout ─────────────────────────────────────────────── */
 .site-header,
+.site-footer,
 .main-content {
   max-width: calc(var(--measure) + 4rem);
   margin-inline: 20% auto;
@@ -110,23 +135,33 @@ time {
   margin-bottom: 3rem;
 }
 
+.site-footer {
+  padding-block: 0.75rem 1.0rem;
+}
+
+.post-byline {
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  color: var(--fg-muted);
+  margin: 0;
+}
+
 .site-nav {
   display: flex;
-  align-items: baseline;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 0.5rem;
   font-family: var(--mono);
   font-size: inherit;
 }
 
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .nav-home {
   color: var(--fg);
-  text-decoration: none;
-  flex-shrink: 0;
-}
-.nav-home:hover { color: var(--accent); }
-.nav-home[aria-current="page"] {
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
 }
 
 .nav-links {
@@ -134,7 +169,8 @@ time {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
+  width: 100%;
 }
 .nav-links a {
   color: var(--fg);
@@ -149,31 +185,40 @@ time {
 /* ── Main ───────────────────────────────────────────────── */
 .main-content {
   padding-block: 0 8rem;
-  max-width: var(--measure);
 }
 
 
 /* ── Homepage ───────────────────────────────────────────── */
 .home { font-family: var(--serif); }
 .home-intro { margin-bottom: 3rem; }
-.home-intro p { margin-bottom: 1em; }
+.home-intro p { margin-bottom: 1em; font-size: var(--post-font-size); }
+.home-intro a { color: var(--fg); }
 .home-intro h1 { font-size: 2rem; margin-bottom: 0.75rem; }
 
+.home-intro h2,
 .home-recent h2 {
   font-family: var(--mono);
-  font-size: 1.1rem;
+  font-size: 1.45rem;
   font-weight: normal;
-  color: var(--fg-muted);
-  margin-bottom: 0;
-  overflow: hidden;
-  white-space: nowrap;
+  margin: 2rem 0 0;
+  line-height: 1;
 }
-.home-recent-label { color: var(--fg); }
 
+.home-intro h2::after,
 .home-recent h2::after {
   content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
+  display: block;
+  overflow: hidden;
   color: var(--fg-muted);
+  line-height: 1;
 }
+
+.home-recent-list {
+  font-size: var(--post-font-size);
+  margin-top: 0;
+}
+.home-recent-list a { color: var(--fg); text-decoration: none; }
+.home-recent-list a:hover { color: var(--accent); }
 
 .nav-icons {
   display: flex;
@@ -184,7 +229,10 @@ time {
 .nav-icons button {
   display: flex;
   align-items: center;
+  color: var(--fg-muted);
+  text-decoration: none;
 }
+.nav-icons a:hover { color: var(--accent); }
 
 .nav-email {
   font-size: 1.3rem;
@@ -202,7 +250,7 @@ time {
   margin: 0;
   padding: 0;
   font-family: var(--mono);
-  font-size: 1.2rem;
+  font-size: var(--post-font-size);
   line-height: 1.2;
 }
 .post-list-item + .post-list-item {
@@ -255,25 +303,34 @@ time {
 /* ── Publicaciones ──────────────────────────────────────── */
 .publicaciones {
   font-family: var(--serif);
-  font-size: 1.2rem;
+  font-size: var(--post-font-size);
   line-height: 1.2;
 }
 .publicaciones h2 {
   font-family: var(--mono);
-  font-size: 1.1rem;
+  font-size: 1.45rem;
   font-weight: normal;
   margin: 2rem 0 0;
+  line-height: 1;
 }
 .publicaciones h2::after {
   content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
   display: block;
   overflow: hidden;
   color: var(--fg-muted);
+  line-height: 1;
 }
-.publicaciones p {
+.publicaciones p,
+.publicaciones ul,
+.publicaciones ol {
   padding-left: 1.5em;
   text-indent: -1.5em;
   margin: 0;
+}
+.publicaciones h2 + p,
+.publicaciones h2 + ul,
+.publicaciones h2 + ol {
+  margin-top: 0.25rem;
 }
 .publicaciones a {
   color: var(--fg);
@@ -283,6 +340,19 @@ time {
 
 /* ── Writing index ──────────────────────────────────────── */
 .writing-index h1 { margin-bottom: 1.5rem; }
+.writing-index-heading {
+  font-family: var(--mono);
+  font-size: 1.45rem;
+  font-weight: normal;
+  margin: 0 0 0.25rem;
+}
+.writing-index-heading::after {
+  content: "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
+  display: block;
+  overflow: hidden;
+  color: var(--fg-muted);
+  line-height: 1;
+}
 .tag-heading {
   font-family: var(--mono);
   font-size: 1.2rem;
@@ -293,10 +363,7 @@ time {
 .post-header { margin-bottom: 2rem; }
 
 .post-title-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
+  display: block;
 }
 .post-title {
   font-family: var(--mono);
@@ -306,8 +373,9 @@ time {
   font-family: var(--mono);
   font-size: 1.1rem;
   font-weight: normal;
-  color: var(--fg);
-  flex-shrink: 0;
+  color: var(--fg-muted);
+  display: block;
+  margin: 0.25rem 0 0.75rem;
 }
 
 .post-dateline {
@@ -323,7 +391,7 @@ time {
 
 .post-tags {
   list-style: none;
-  margin: var(--space) 0 0;
+  margin: var(--space) 0 33vh;
   padding: 0;
   display: flex;
   gap: 0.5rem;
@@ -334,15 +402,13 @@ time {
 .post-tags a:hover { color: var(--accent); }
 
 .post-body {
-  max-width: var(--measure);
   hyphens: auto;
   -webkit-hyphens: auto;
 }
 .post-body a { color: var(--fg); }
 .post-body a:hover { color: var(--accent); }
-.post-body p { font-size: var(--post-font-size); text-indent: 1.5em; }
-.post-body p:first-child { text-indent: 0; }
-.post-body h2 + p { text-indent: 0; }
+.post-body p { font-size: var(--post-font-size); margin-bottom: 1em; }
+.post-body p:last-child { margin-bottom: 0; }
 .post-body h2,
 .post-body h3,
 .post-body h4 {
@@ -404,36 +470,49 @@ time {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   font-family: var(--mono);
   font-size: 1.1rem;
 }
 .post-nav a { color: var(--fg-muted); text-decoration: none; }
 .post-nav a:hover { color: var(--accent); }
+.post-nav-disabled { color: var(--border); cursor: default; }
 
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 600px) {
   body { font-size: 0.95rem; }
 
   .site-header,
+  .site-footer,
   .main-content { padding-inline: 1.25rem; margin-inline: auto; }
 
-  /* 1. Nav: name first, then text+icon links below */
-  .site-nav {
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem 1.25rem;
-  }
-  .nav-home  { order: 1; flex-basis: 100%; }
-  .nav-links { order: 2; flex-basis: 100%; flex-direction: column; gap: 0.4rem; }
+  .nav-links { gap: 0.4rem; flex-direction: column; }
 
   /* Undo explicit font-size overrides so they inherit the smaller body size */
   .post-list,
   .home-recent h2,
+  .home-intro h2,
+  .writing-index-heading,
   .publicaciones,
   .publicaciones h2 { font-size: inherit; }
+
+  .post-body p,
+  .home-recent-list,
+  .home-intro p { font-size: inherit; }
+
+  h1, h2, h3, h4 { font-size: inherit; }
+  .post-title { font-size: 1.3rem; }
+  .post-tags,
+  .post-title-date,
+  .post-dateline,
+  .post-nav,
+  .post-body h2,
+  .post-body h3,
+  .post-body h4 { font-size: inherit; }
 
   /* 2. Weblog post list: date on its own line, title + tags below */
   .post-list-link {

@@ -1,0 +1,13 @@
+---
+layout: base.njk
+pagination:
+  data: collections.orgPages
+  size: 1
+  alias: pagina
+permalink: /{{ pagina.data.slug | stripLeadingSlash }}/
+eleventyComputed:
+  title: "{{ pagina.title }}"
+---
+<div class="publicaciones">
+  {{ pagina.content | demoteHeadings | safe }}
+</div>

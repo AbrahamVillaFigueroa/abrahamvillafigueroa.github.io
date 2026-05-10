@@ -8,6 +8,11 @@ module.exports = function (eleventyConfig) {
     collectionName: "org",
   });
 
+  eleventyConfig.addPlugin(orgPlugin, {
+    orgDir: path.join(__dirname, "src/pages"),
+    collectionName: "orgPages",
+  });
+
   eleventyConfig.addPlugin(rssPlugin);
 
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -43,6 +48,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("demoteHeadings", (html) => {
     if (typeof html !== "string") return html;
     return html.replace(/<(\/?)h1(\b[^>]*)>/gi, "<$1h2$2>");
+  });
+
+  // Format a Date as "D de mes" in Spanish
+  eleventyConfig.addFilter("spanishDate", (value) => {
+    if (!value) return "";
+    const d = value instanceof Date ? value : new Date(value);
+    const months = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+    return `${d.getUTCDate()} de ${months[d.getUTCMonth()]} de ${d.getUTCFullYear()}`;
   });
 
   // Format a Date or ISO string as YYYY-MM-DD

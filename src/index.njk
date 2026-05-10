@@ -4,6 +4,7 @@ title: Inicio
 ---
 <section class="home">
   <div class="home-intro">
+    <h2>Sobre mí</h2>
 	<p>
 	  Estudié filosofía en la UNAM y relaciones internacionales en El Colegio de México.
 	</p>
@@ -19,14 +20,12 @@ title: Inicio
 
   {% if collections.org.length %}
   <section class="home-recent">
-    <h2>::<span class="home-recent-label">Reciente</span>::</h2>
-    <ol class="post-list">
-      {% for post in collections.org | head(3) %}
-      <li class="post-list-item">
-        <a href="/weblog/{{ post.data.slug | stripLeadingSlash }}/" class="post-list-link"><span class="post-list-date">{{ post.date | isoDate | replace("-", "_") }}</span><span class="post-list-title">{{ post.title }}{% if post.tags %}<span class="post-list-tags"> // {% for tag in post.tags %}#{{ tag }}{% if not loop.last %} {% endif %}{% endfor %}</span>{% endif %}</span></a>
-      </li>
+    <h2>Entradas recientes</h2>
+    <p class="home-recent-list">
+      {% for post in collections.org | head(4) %}
+        <a href="/weblog/{{ post.data.slug | stripLeadingSlash }}/">{{ post.date | spanishDate }}, {{ post.title }}</a>{% if not loop.last %} | {% endif %}
       {% endfor %}
-    </ol>
+    </p>
   </section>
 
   {% endif %}

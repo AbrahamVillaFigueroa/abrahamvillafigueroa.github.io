@@ -1,0 +1,12 @@
+#+TITLE: Biblioteca
+#+DATE: 2026-01-01
+
+* Libros que estoy leyendo
++ /Lonesome Dove/, Larry McMurtry, 1985, novela.
++ /Ensayos completos/, Jorge Luis Borges, 1925-1985, ensayo.
++ /Naufragios/, Álvar Nuñez Cabeza de Vaca, 1542, crónica. 
+* Libros que quiero leer
++ /La sabiduría del corazón: biografía de Ramón López Velarde/, Pablo Sol Mora, 2026, biografía.
++ /Anatomía de la memoria/, Eduardo Ruiz Sosa, 2014, novela. 
+
+  

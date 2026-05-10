@@ -24,11 +24,9 @@
 <body>
   <header class="site-header">
     <nav class="site-nav">
-      <a href="/" class="nav-home" {% if page.url == "/" %}aria-current="page"{% endif %}>{{ site.author.name }}</a>
-      <ul class="nav-links">
-        <li><a href="/publicaciones/" {% if page.url == "/publicaciones/" %}aria-current="page"{% endif %}>publicaciones</a></li>
-        <li><a href="/weblog/" {% if page.url.startsWith("/weblog") %}aria-current="page"{% endif %}>weblog</a></li>
-        <li class="nav-icons">
+      <div class="nav-top">
+        <span class="nav-home">Sitio web de {{ site.author.name }}</span>
+        <div class="nav-icons">
           <a href="/weblog/etiquetas/" {% if page.url == "/weblog/etiquetas/" %}aria-current="page"{% endif %} aria-label="Etiquetas"><i class="fa-solid fa-hashtag"></i></a>
           <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" onclick="
             var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
@@ -38,7 +36,14 @@
           "><i class="fa-solid fa-sun"></i></button>
           <a href="https://letterbird.co/a-v-f" class="nav-email" aria-label="Contacto"><i class="fa-solid fa-envelope"></i></a>
           <a href="/weblog/feed.xml" class="nav-email" aria-label="RSS"><i class="fa-solid fa-rss"></i></a>
-        </li>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>principal</a></li>
+        <li><a href="/publicaciones/" {% if page.url == "/publicaciones/" %}aria-current="page"{% endif %}>publicaciones</a></li>
+        <li><a href="/weblog/" {% if page.url.startsWith("/weblog") %}aria-current="page"{% endif %}>weblog</a></li>
+        <li><a href="/biblioteca/" {% if page.url == "/biblioteca/" %}aria-current="page"{% endif %}>biblioteca</a></li>
+        <li><a href="/enlaces/" {% if page.url == "/enlaces/" %}aria-current="page"{% endif %}>enlaces</a></li>
       </ul>
     </nav>
   </header>
