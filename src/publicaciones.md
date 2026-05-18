@@ -6,6 +6,11 @@ permalink: /publicaciones/
 <div class="publicaciones">
 
 ## Crítica literaria
+
+[Sobre *Atlas de (otro) México*, de Rafael Lemus, en *Crticisismo*](https://criticismo.com/contra-el-mito-de-la-historia/)
+
+[Sobre *Tus sueños imperios han sido*, de Álvaro Enrigue, en *Criticismo*](https://criticismo.com/contra-el-mito-de-la-historia/)
+
 [Sobre *Minimosca*, de Gustavo Faverón, en *Letras Libres*](https://letraslibres.com/revista/villa-figueroa-minimosca-gustavo-faveron-patriau/)
 
 [Sobre *No soy un robot*, de Juan Villoro, en *Latin American Literature Today*](https://latinamericanliteraturetoday.org/es/rese%C3%B1as/resena-finalista-no-soy-un-robot-de-juan-villoro/)
@@ -23,6 +28,9 @@ permalink: /publicaciones/
 [Sobre tres novelas de Diamela Eltit, en *Criticismo*](https://criticismo.com/tres-novelas/)
 
 ## Crítica cinematográfica
+
+[Sobre *Cabeza de Vaca*, de Nicolás Echeverría, en *Criticismo*](https://criticismo.com/un-destello-de-incertidumbre/)
+
 [Entrevista a Eduardo Williams, en *Sabzian*](https://sabzian.be/text/on-the-eve-of-the-future)
 
 [Sobre la retrospectiva de cine mexicano proyectada en Locarno, en *Swiss Info*](https://www.swissinfo.ch/spa/cultura/locarno-reaviva-las-inocentes-alegr%C3%ADas-sangrientas-del-cine-mexicano/48728314)
@@ -53,7 +61,7 @@ permalink: /publicaciones/
 
 [Sobre *Get Out*, de Jordan Peele, en *Nexos*](https://cultura.nexos.com.mx/huye/)
 
-## In English
+## En inglés
 [Essay on Julio Bracho for the Locarno Film Festival](/docs/essay-on-julio-bracho.pdf)
 
 [Article on two films by Rogério Sganzerla](/docs/essay-on-sganzerla.pdf)
