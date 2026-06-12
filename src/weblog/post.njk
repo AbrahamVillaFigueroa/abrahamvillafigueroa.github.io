@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: base.njk
 pagination:
   data: collections.org
   size: 1
@@ -30,17 +30,20 @@ eleventyComputed:
   </ul>
   {% endif %}
 
+  {% set arrowLeft %}<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>{% endset %}
+  {% set arrowUp %}<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>{% endset %}
+  {% set arrowRight %}<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>{% endset %}
   <nav class="post-nav">
     {% if pagination.nextPageHref %}
-      <a href="{{ pagination.nextPageHref }}" aria-label="Entrada anterior"><i class="fa-solid fa-arrow-left"></i></a>
+      <a href="{{ pagination.nextPageHref }}" aria-label="Entrada anterior">{{ arrowLeft | safe }}</a>
     {% else %}
-      <span class="post-nav-disabled"><i class="fa-solid fa-arrow-left"></i></span>
+      <span class="post-nav-disabled">{{ arrowLeft | safe }}</span>
     {% endif %}
-    <a href="/weblog/" aria-label="Subir"><i class="fa-solid fa-arrow-up"></i></a>
+    <a href="/weblog/" aria-label="Subir">{{ arrowUp | safe }}</a>
     {% if pagination.previousPageHref %}
-      <a href="{{ pagination.previousPageHref }}" aria-label="Entrada siguiente"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="{{ pagination.previousPageHref }}" aria-label="Entrada siguiente">{{ arrowRight | safe }}</a>
     {% else %}
-      <span class="post-nav-disabled"><i class="fa-solid fa-arrow-right"></i></span>
+      <span class="post-nav-disabled">{{ arrowRight | safe }}</span>
     {% endif %}
   </nav>
 </article>

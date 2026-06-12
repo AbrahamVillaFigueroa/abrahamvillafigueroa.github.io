@@ -1,51 +1,59 @@
 /* ── Fonts ──────────────────────────────────────────────── */
 @font-face {
   font-family: "Valkyrie";
-  src: url("/assets/fonts/valkyrie/valkyrie-t3.otf") format("opentype");
+  src: url("/assets/fonts/valkyrie/valkyrie-t3.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Valkyrie";
-  src: url("/assets/fonts/valkyrie/valkyrie-t3-italic.otf") format("opentype");
+  src: url("/assets/fonts/valkyrie/valkyrie-t3-italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "Valkyrie";
-  src: url("/assets/fonts/valkyrie/valkyrie-t3-bold.otf") format("opentype");
+  src: url("/assets/fonts/valkyrie/valkyrie-t3-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Valkyrie";
-  src: url("/assets/fonts/valkyrie/valkyrie-t3-bold-italic.otf") format("opentype");
+  src: url("/assets/fonts/valkyrie/valkyrie-t3-bold-italic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "Triplicate";
-  src: url("/assets/fonts/triplicate/triplicate-t4.ttf") format("truetype");
+  src: url("/assets/fonts/triplicate/triplicate-t4.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Triplicate";
-  src: url("/assets/fonts/triplicate/triplicate-t4-italic.ttf") format("truetype");
+  src: url("/assets/fonts/triplicate/triplicate-t4-italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "Triplicate";
-  src: url("/assets/fonts/triplicate/triplicate-t4-bold.ttf") format("truetype");
+  src: url("/assets/fonts/triplicate/triplicate-t4-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Triplicate";
-  src: url("/assets/fonts/triplicate/triplicate-t4-bold-italic.ttf") format("truetype");
+  src: url("/assets/fonts/triplicate/triplicate-t4-bold-italic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 /* ── Variables ─────────────────────────────────────────── */
@@ -67,9 +75,16 @@
 [data-theme="dark"] {
   --accent:   #FF8E8E;
   --fg:       #e8e4de;
-  --fg-muted: #8a8480;
+  --fg-muted: #9a948e;
   --bg:       #1E1E1B;
   --border:   #2e2c29;
+}
+
+/* ── Icons ──────────────────────────────────────────────── */
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  display: block;
 }
 
 /* ── Theme toggle ───────────────────────────────────────── */
@@ -77,11 +92,14 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.3rem;
-  color: var(--fg);
+  font-size: inherit;
+  color: var(--fg-muted);
   padding: 0;
 }
 .theme-toggle:hover { color: var(--accent); }
+.theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ── Reset ──────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
@@ -101,6 +119,7 @@ h1, h2, h3, h4 {
   font-weight: normal;
   line-height: 1.25;
   margin: 0 0 var(--space);
+  text-wrap: balance;
 }
 h1 { font-size: 1.55rem; }
 h2 { font-size: 1.45rem; }
@@ -112,7 +131,7 @@ a {
 }
 a:hover { text-decoration-thickness: 2px; }
 
-p { margin: 0; }
+p { margin: 0; text-wrap: pretty; }
 
 time {
   font-family: var(--serif);
@@ -130,7 +149,11 @@ time {
 
 /* ── Homepage ───────────────────────────────────────────── */
 .home { font-family: var(--serif); }
-.home-intro { margin-bottom: 3rem; }
+.home-intro {
+  margin-bottom: 3rem;
+  line-height: 1.45;
+  font-variant-numeric: oldstyle-nums;
+}
 .home-intro p { margin-bottom: 1em; font-size: var(--post-font-size); }
 .home-intro a { color: var(--fg); }
 .home-intro h1 { font-size: 2rem; margin-bottom: 0.75rem; }
@@ -228,7 +251,8 @@ time {
 .publicaciones {
   font-family: var(--serif);
   font-size: var(--post-font-size);
-  line-height: 1.2;
+  line-height: 1.4;
+  font-variant-numeric: oldstyle-nums;
 }
 .publicaciones h2 {
   font-family: var(--mono);
@@ -328,6 +352,8 @@ time {
 .post-body {
   hyphens: auto;
   -webkit-hyphens: auto;
+  line-height: 1.45;
+  font-variant-numeric: oldstyle-nums;
 }
 .post-body a { color: var(--fg); }
 .post-body a:hover { color: var(--accent); }
@@ -351,6 +377,69 @@ time {
   margin-block: 2.5rem;
 }
 .post-body p:has(> img) + p { text-indent: 0; }
+
+.post-body ul,
+.post-body ol {
+  font-size: var(--post-font-size);
+  margin: 0 0 1em;
+  padding-left: 1.5em;
+}
+.post-body li + li { margin-top: 0.25em; }
+.post-body li p { margin-bottom: 0.25em; }
+
+.post-body blockquote {
+  margin: 1.5em 0;
+  padding-left: 1.25em;
+  border-left: 2px solid var(--fg-muted);
+}
+.post-body blockquote p {
+  font-size: calc(var(--post-font-size) * 0.95);
+}
+
+.post-body code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+}
+.post-body pre {
+  font-family: var(--mono);
+  font-size: 1rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  padding: 0.75em 1em;
+  margin: 1.5em 0;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
+.post-body pre code { font-size: inherit; }
+
+.post-body table {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: calc(var(--post-font-size) * 0.85);
+  line-height: 1.35;
+}
+.post-body th,
+.post-body td {
+  padding: 0.3em 0.75em;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.post-body th {
+  font-family: var(--mono);
+  font-weight: normal;
+  color: var(--fg-muted);
+}
+
+.post-body hr {
+  border: none;
+  margin: 2.5rem 0;
+  text-align: center;
+  font-family: var(--mono);
+  color: var(--fg-muted);
+  line-height: 1;
+}
+.post-body hr::before { content: "::::::::::::::::"; }
 
 /* ── Footnote tooltip ───────────────────────────────────── */
 .fn-tooltip {
@@ -540,7 +629,7 @@ time {
 }
 
 @media (max-width: 600px) {
-  body { font-size: 0.95rem; }
+  body { font-size: 1.0625rem; }
 
   /* Undo explicit font-size overrides so they inherit the smaller body size */
   .post-list,
