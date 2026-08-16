@@ -1,0 +1,3 @@
+#+TITLE: Anatomía de la memoria
+#+AUTOR: Eduardo Ruiz Sosa
+#+DATE: 2026-05-12

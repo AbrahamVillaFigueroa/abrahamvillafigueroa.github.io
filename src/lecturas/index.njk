@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: Lecturas
+permalink: /lecturas/
+---
+<div class="publicaciones">
+  <table>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Leído</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for libro in collections.orgLibros %}
+      {% set slug = libro.data.slug | stripLeadingSlash %}
+      <tr>
+        <td>
+          {% if libro.data.enlace %}
+            <a href="{{ libro.data.enlace }}"{% if libro.data.enlace.startsWith("http") %} class="enlace-externo" rel="noopener"{% endif %}>{{ libro.title }}</a>
+          {% elif libro.content | trim %}
+            <a href="/lecturas/{{ slug }}/">{{ libro.title }}</a>
+          {% else %}
+            {{ libro.title }}
+          {% endif %}
+        </td>
+        <td>{{ libro.data.autor }}</td>
+        <td>{{ libro.date | isoDate }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -13,6 +13,11 @@ module.exports = function (eleventyConfig) {
     collectionName: "orgPages",
   });
 
+  eleventyConfig.addPlugin(orgPlugin, {
+    orgDir: path.join(__dirname, "src/libros"),
+    collectionName: "orgLibros",
+  });
+
   eleventyConfig.addPlugin(rssPlugin);
 
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -44,10 +49,14 @@ module.exports = function (eleventyConfig) {
       .replace(/href="[^"]*#(fnr\.[^"]+)"/g, 'href="#$1"');
   });
 
-  // Demote h1→h2 in org post content so body headings sit below the post title
+  // Demote every heading one level (h1→h2, h2→h3…) in org content so body
+  // headings sit below the page title and nested org headings keep their depth
   eleventyConfig.addFilter("demoteHeadings", (html) => {
     if (typeof html !== "string") return html;
-    return html.replace(/<(\/?)h1(\b[^>]*)>/gi, "<$1h2$2>");
+    return html.replace(
+      /<(\/?)h([1-5])(\b[^>]*)>/gi,
+      (_, slash, level, rest) => `<${slash}h${Number(level) + 1}${rest}>`
+    );
   });
 
   // Format a Date as "D de mes" in Spanish

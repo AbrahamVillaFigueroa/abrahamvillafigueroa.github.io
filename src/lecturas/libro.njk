@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <header class="post-header">
+    <div class="post-title-row">
+      <h1 class="post-title">{{ libro.title }}</h1>
+    </div>
+    {% if libro.data.autor %}<p class="post-byline">{{ libro.data.autor }}</p>{% endif %}
+    <time class="post-title-date" datetime="{{ libro.date | isoDate }}">Leído el {{ libro.date | spanishDate }}</time>
+    <div class="post-dateline" aria-hidden="true"></div>
+  </header>
+
+  <div class="post-body">
+    {{ libro.content | demoteHeadings | localizeFootnotes | fixFootnoteLinks | safe }}
+  </div>
+
+  <nav class="libro-nav">
+    <a href="/lecturas/">Todas las lecturas</a>
+  </nav>
+</article>
