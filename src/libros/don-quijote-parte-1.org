@@ -1,0 +1,3 @@
+#+TITLE: El ingenioso hidalgo don Quijote de la Mancha: parte 1
+#+AUTOR: Miguel de Cervantes
+#+DATE: 2026-07-12
