@@ -67,7 +67,7 @@
   --bg:       #EFEFEF;
   --border:   #e0ddd8;
 
-  --measure: 38rem;
+  --measure: 40rem;
   --space:   1.0rem;
   --post-font-size: 1.333rem;
 }
@@ -159,12 +159,13 @@ time {
 .home-intro h1 { font-size: 2rem; margin-bottom: 0.75rem; }
 
 /* Animated ASCII art from ascii.rest (vendored in assets/ascii/). 65 columns
-   at 0.6em per character: the font size keeps the piece inside the measure. */
-.home-ascii { margin: 0 0 3rem; }
+   at about 0.6em per character, with a little slack for wider fallback glyphs:
+   sized from the column's own width (cqi), it never overflows. */
+.home-ascii { margin: 0 0 3rem; container-type: inline-size; }
 .home-ascii ascii-art {
   color: var(--fg-muted);
-  font-size: min(0.95rem, calc((100vw - 2rem) / 39));
-  overflow-x: auto;
+  font-size: min(0.95rem, 100cqi / 40);
+  overflow: hidden;
 }
 
 .home-intro h2,
