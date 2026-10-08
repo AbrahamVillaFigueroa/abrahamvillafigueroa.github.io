@@ -23,3 +23,4 @@
 + [[https://www.underground-homes.com/][Underground Homes.]] Por si acaso.
 + [[https://thejang.com/textures/][Texture Station]]
 + [[https://sci-hub.mx/][Sci-hub]]
++ [[https://ascii.rest/][ascii.rest.]] Fuente de arte ASCII usada en la página principal.
