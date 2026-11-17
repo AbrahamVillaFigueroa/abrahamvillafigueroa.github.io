@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
   <subtitle>Weblog</subtitle>
   <link href="{{ site.url }}/weblog/feed.xml" rel="self"/>
   <link href="{{ site.url }}/"/>
-  <id>{{ site.url }}/</id>
+  <id>{{ site.feedIdBase }}/</id>
   <author>
     <name>{{ site.author.name }}</name>
     <uri>https://letterbird.co/a-v-f</uri>
@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
     <title>{{ post.title }}</title>
     <link href="{{ site.url }}/weblog/{{ post.data.slug | stripLeadingSlash }}/"/>
     <updated>{{ post.date | isoDate }}T00:00:00Z</updated>
-    <id>{{ site.url }}/weblog/{{ post.data.slug | stripLeadingSlash }}/</id>
+    <id>{{ site.feedIdBase }}/weblog/{{ post.data.slug | stripLeadingSlash }}/</id>
     <content type="html"><![CDATA[{{ post.content | safe }}]]></content>
   </entry>
   {% endfor %}
